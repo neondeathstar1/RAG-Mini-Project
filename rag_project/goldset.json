@@ -1,0 +1,13 @@
+{
+  "about": "Gold set for my own knowledge base in my_kb/",
+  "kb_files": ["doc1.md", "doc2.md"],
+  "questions": [
+    {
+      "qid": "Q1",
+      "question": "...?",
+      "source": "doc1.md",
+      "evidence": ["exact phrase copied from doc1.md"],
+      "answerable": true
+    }
+  ]
+}
