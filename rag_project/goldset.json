@@ -1,13 +1,14 @@
 {
-  "about": "Gold set for my own knowledge base in my_kb/",
-  "kb_files": ["doc1.md", "doc2.md"],
+  "about": "Gold set for my phishing triage runbook knowledge base in my_kb/. 6 answerable + 2 unanswerable.",
+  "kb_files": ["01_reporting.md", "02_triage.md", "03_containment.md", "04_escalation.md", "05_metrics_and_improvement.md"],
   "questions": [
-    {
-      "qid": "Q1",
-      "question": "...?",
-      "source": "doc1.md",
-      "evidence": ["exact phrase copied from doc1.md"],
-      "answerable": true
-    }
+    {"qid": "Q1", "question": "How quickly must an employee report a suspicious email?", "source": "01_reporting.md", "evidence": ["within 15 minutes of noticing it"], "answerable": true},
+    {"qid": "Q2", "question": "When does a sender domain count as suspicious by default?", "source": "02_triage.md", "evidence": ["registered fewer than 30 days ago"], "answerable": true},
+    {"qid": "Q3", "question": "How long can soft deleted phishing messages be recovered?", "source": "03_containment.md", "evidence": ["stay recoverable for 14 days"], "answerable": true},
+    {"qid": "Q4", "question": "How soon must the CISO be told about a Severity 1 incident?", "source": "04_escalation.md", "evidence": ["the CISO within 30 minutes"], "answerable": true},
+    {"qid": "Q5", "question": "What is the target click rate on simulated phishing emails?", "source": "05_metrics_and_improvement.md", "evidence": ["the target is below 5 percent"], "answerable": true},
+    {"qid": "Q6", "question": "Where do analysts open suspicious links and attachments?", "source": "02_triage.md", "evidence": ["internal sandbox called Detonator"], "answerable": true},
+    {"qid": "Q7", "question": "How long should I roast a whole chicken?", "source": "", "evidence": [], "answerable": false},
+    {"qid": "Q8", "question": "How should analysts respond to a ransomware infection?", "source": "", "evidence": [], "answerable": false}
   ]
 }
